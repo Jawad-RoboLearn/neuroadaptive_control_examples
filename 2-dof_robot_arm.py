@@ -1,3 +1,5 @@
+# A 2-Dof robotic arm where the load at end effector is adaptively control with RBF adaptive control approach.
+
 import numpy as np
 import matplotlib.pyplot as plt
 
