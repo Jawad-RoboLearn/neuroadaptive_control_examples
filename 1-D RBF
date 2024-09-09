@@ -1,5 +1,14 @@
 # System
 x_dot = &(x) + u 
 &(x) = w' * theta(x) + $(x)
+theta(x) = exp(-b ||x-c||^2) 
 
-Here x_dot is system velocity, &(x) is a neuro-adaptive 
+- x is system state
+- & is estimation of the system
+- w' * theta(x) represents neural adaptive control component
+- $ is model inaccuracies
+- theta is radial basis function
+  - b is control width of basis function
+  - c is center of the radial basis function
+  - ||x-c||^2 eucledian distance
+
