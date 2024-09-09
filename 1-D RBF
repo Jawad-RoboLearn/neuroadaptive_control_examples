@@ -1,2 +1,5 @@
 # System
-\x_{dot} = 
+x_dot = &(x) + u 
+&(x) = w' * theta(x) + $(x)
+
+Here x_dot is system velocity, &(x) is a neuro-adaptive 
