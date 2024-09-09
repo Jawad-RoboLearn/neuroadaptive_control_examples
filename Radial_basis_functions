@@ -1,4 +1,4 @@
-# System
+# Radial Basis Functions
 x_dot = &(x) + u 
 &(x) = w' * theta(x) + $(x)
 theta(x) = exp(-b ||x-c||^2) 
@@ -12,3 +12,8 @@ theta(x) = exp(-b ||x-c||^2)
   - c is center of the radial basis function
   - ||x-c||^2 eucledian distance
 
+The control input u is designed as
+u = u_adaptive + u_nominal
+
+- u_nominal --> Any control you like such as PID etc
+- u_adaptive --> w_hat * theta
